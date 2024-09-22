@@ -42,9 +42,6 @@ static void set_hid_indicators(lv_obj_t *label, struct hid_indicators_state stat
         strncat(text, "S", 1);
         lock = true;
     }
-    if (lock) {
-        strncat(text, "", 3);
-    }
 
     lv_label_set_text(label, text);
 }
